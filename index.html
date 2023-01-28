@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ducks & Geese</title>
+    <script src="app.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js" defer></script>
+</head>
+
+<body>
+    <div id="homepage">
+        <div class="h1" id="bosss">
+            <h1 id="hOne">Ducks & Geese</h1>
+        </div>
+        <div id="h2">
+            <h2>Ducks & Geese</h2>
+            <h2>Wonderful farm animals and even better pets!</h2>
+        </div>
+        <div id="clickMe"><button id="buttonG">Continue</button></div>
+        <div class="firstImage">
+
+            <img src="https://cdn.pixabay.com/photo/2018/03/01/13/45/swan-3190687_960_720.jpg" alt="duckGoose"
+                class="firstImages">
+            <p class="paraOne" id="firstPara">We offer a free test to determine what kind of bird is right for you, and
+                your living
+                situation!</p>
+
+        </div>
+        <div id="divF">
+            <button id="buttonF" class="buttonGs">Continue</button>
+        </div>
+
+        <div class="secondImage">
+            <p class="paraOne">There is a right type of duck or goose for everyone, so go ahead and take our free test
+                below!</p>
+            <img src="https://cdn.pixabay.com/photo/2018/07/05/22/57/nile-goose-chick-3519367_960_720.jpg"
+                alt="babyDuck" class="firstImages">
+
+
+        </div>
+        <div id="divH">
+            <button id="buttonH" class="buttonGs">Continue</button>
+        </div>
+        <div class="thirdImage">
+            <img src="https://cdn.pixabay.com/photo/2018/10/18/14/08/rate-3756505_960_720.jpg" alt="catDuck"
+                class="firstImages">
+            <p class="paraOne">
+                Dont worry if you already have a cat or a dog, they will surely get along, and be best friends in no
+                time!
+            </p>
+        </div>
+        <div id="divJ">
+            <button id="buttonJ" class="buttonGs">Continue</button>
+        </div>
+        <div id="begin">
+            <h3 id="h3s">Ready for the test? Then lets begin!</h3>
+            <button id="beginQuestionsButton">Begin!</button>
+        </div>
+    </div>
+    <div id="boss">
+        <h1 class="h1" id="h1Boss">Ducks & Geese</h1>
+    </div>
+    <section id="questionSection">
+
+        <div id="firstQuestion" class="questions">
+            <h4>Do you live in the city or in the country?</h3>
+                <select name="cityCountry" id="cityCountry" class="select">
+                    <option value="" disabled selected>Please Select</option>
+                    <option value="1" class="option">City</option>
+                    <option value="2" class="option">Country</option>
+                </select>
+                <input type="button" value="Next" id="firstButton" class="buttonsButtons">
+        </div>
+        <div id="secondQuestion" class="questions">
+            <h4>Do you prefer goofy or sophisticated birds?</h4>
+            <select name="goofySophisticated" id="goofySophisticated" class="select">
+                <option value="" disabled selected>Please Select</option>
+                <option value="1" class="option">Goofy</option>
+                <option value="2" class="option">Sophisticated</option>
+            </select>
+            <input type="button" value="Next" id="secondButton" class="buttonsButtons">
+        </div>
+        <div id="thirdQuestion" class="questions">
+            <h4>Ducks or Geese?</h4>
+            <select name="duckGeese" id="duckGeese" class="select">
+                <option value="" disabled selected>Please Select</option>
+                <option value="1" class="option">Ducks</option>>
+                <option value="2" class="option">Geese</option>
+            </select>
+            <input type="button" value="Finish" id="thirdButton" class="buttonsButtons">
+        </div>
+    </section>
+    <section id="finalSection">
+        <div id="thankYou">
+            <p>Thank you for completing the test! </p>
+            <p> The right animal for You is:</p>
+        </div>
+        <div id="resultImages">
+            <div id="cityGoofyDuck" class="birdResultImages">
+                <img src="https://cdn.pixabay.com/photo/2015/10/18/13/23/bird-994349_960_720.jpg" alt="cityGoofyDuck"
+                    class="birdImages">
+                <h5>George</h5>
+            </div>
+            <div id="countryGoofyDuck" class="birdResultImages">
+                <img src="https://cdn.pixabay.com/photo/2016/12/05/21/09/duck-1884934_960_720.jpg"
+                    alt="countryGoofyDuck" class="birdImages">
+                <h5>Benjamin</h5>
+            </div>
+            <div id="citySophisticatedDuck" class="birdResultImages">
+                <img src="https://cdn.pixabay.com/photo/2018/10/14/23/13/mallard-3747770_960_720.jpg"
+                    alt="citySophisticatedDuck" class="birdImages">
+                <h5>Sergio</h5>
+            </div>
+            <div id="countrySophisticatedDuck" class="birdResultImages">
+                <img src="https://cdn.pixabay.com/photo/2018/04/07/22/00/nature-3299744_960_720.jpg"
+                    alt="countrySophisticatedDuck" class="birdImages">
+                <h5>Randy</h5>
+            </div>
+            <div id="cityGoofyGoose" class="birdResultImages">
+                <img src="https://cdn.pixabay.com/photo/2017/03/13/10/31/greylag-goose-2139296_960_720.jpg"
+                    alt="cityGoofyGoose" class="birdImages">
+                <h5>Julian</h5>
+            </div>
+            <div id="countryGoofyGoose" class="birdResultImages">
+                <img src="https://cdn.pixabay.com/photo/2018/06/29/19/29/goose-3506513_960_720.jpg"
+                    alt="countryGoofyGoose" class="birdImages">
+                <h5>Pablo</h5>
+            </div>
+            <div id="citySophisticatedGoose" class="birdResultImages">
+                <img src="https://cdn.pixabay.com/photo/2017/07/11/20/18/goose-2494887_960_720.jpg"
+                    alt="citySophisticatedGoose" class="birdImages">
+                <h5>Kyle</h5>
+            </div>
+            <div id="countrySophisticatedGoose" class="birdResultImages">
+                <img src="https://cdn.pixabay.com/photo/2022/12/05/06/16/goose-7636080_960_720.jpg"
+                    alt="countrySophisticatedGoose" class="birdImages">
+                <h5>Bob</h5>
+            </div>
+        </div>
+        <input type="button" id="homepageButton" value="Back to Homepage">
+    </section>
+</body>
+
+</html>
